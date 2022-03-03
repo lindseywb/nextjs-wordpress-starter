@@ -1,9 +1,9 @@
 import Button from '@/components/atoms/Button'
 import Card from '@/components/molecules/Card'
-import {archivePropTypes} from '@/functions/getPagePropTypes'
+import { archivePropTypes } from '@/functions/getPagePropTypes'
 import getArchivePosts from '@/functions/next-api/wordpress/archive/getArchivePosts'
-import {PropTypes} from 'prop-types'
-import {useRef, useState} from 'react'
+import { PropTypes } from 'prop-types'
+import { useRef, useState } from 'react'
 
 /**
  * Render the Archive component.
@@ -65,12 +65,13 @@ export default function Archive({
 
   return (
     <>
-      <div className="grid lg:grid-cols-2 gap-12">
+      <div className="grid lg:grid-cols-3 gap-12">
         {allPosts.map((post, index) => (
           <Card
             key={index}
             title={post?.title}
             url={post?.uri}
+            image={post?.featuredImage}
             body={post?.excerpt}
           />
         ))}

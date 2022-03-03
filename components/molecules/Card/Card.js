@@ -35,11 +35,12 @@ export default function Card({
 }) {
   return (
     <div className={cn(styles.card, className)}>
-      {image && image.sourceUrl && (
+      {/* {image && console.log(image)} */}
+      {image && image.node.sourceUrl && (
         <div className={styles.image}>
           <img
             draggable="false"
-            src={image.sourceUrl}
+            src={image.node.sourceUrl}
             alt={`${image.altText ?? title}`}
             loading="lazy"
             height={image.height}
@@ -103,3 +104,4 @@ Card.propTypes = {
 Card.defaultProps = {
   headingLevel: 'h2'
 }
+'http://next-blog.local/wp-content/uploads/2022/03/eberhard-grossgasteiger-A7V1-rGDNkg-unsplash-150x150.jpg'
