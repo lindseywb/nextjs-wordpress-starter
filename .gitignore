@@ -44,3 +44,4 @@ vendor
 
 # vercel
 .vercel
+.vscode/snipsnap.code-snippets
