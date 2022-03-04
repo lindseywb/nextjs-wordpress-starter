@@ -110,6 +110,12 @@ export default function displayBlock(block, index) {
       return <BlockGravityForm {...attributes} key={index} />
     }
 
+    // ACF Blocks
+    case 'acf/slideshow': {
+      const BlockSlideshow = dynamic(() => import('@/components/blocks/acf/BlockSlideshow'))
+      return <BlockSlideshow data={attributes?.data} key={index} />
+    }
+
     default:
       return <pre key={index}>{JSON.stringify(block, null, 2)}</pre>
   }

@@ -1,5 +1,5 @@
-import Spacer from '@/components/atoms/Spacer'
-import PropTypes from 'prop-types'
+import Spacer from '@/components/atoms/Spacer';
+import PropTypes from 'prop-types';
 
 /**
  * Spacer Block
@@ -13,13 +13,14 @@ import PropTypes from 'prop-types'
  * @return {Element}              The Spacer component.
  */
 export default function BlockSpacer({anchor, height}) {
-  return <Spacer height={height} id={anchor} />
+  const spacerHeight = parseInt(height, 10);
+  return <Spacer height={spacerHeight} id={anchor} />
 }
 
 BlockSpacer.propTypes = {
   anchor: PropTypes.string,
-  height: PropTypes.number
+  height: PropTypes.string
 }
 BlockSpacer.defaultProps = {
-  height: 40
+  height: '40px'
 }
