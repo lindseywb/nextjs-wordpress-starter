@@ -1,22 +1,39 @@
-import styles from './BlockSlideshow.module.css'
+import Slide from '@/components/molecules/Slide';
+import styles from './BlockSlideshow.module.css';
 
 export default function BlockSlideshow({data}) {
   console.log({data})
+
   return(
     <>
       <div className={styles.BlockSlideshow}>
-        <h1>Slideshow</h1>
         {data?.slide_1_heading && (
-          <h2>{data?.slide_1_heading}</h2>
+          <Slide
+            heading={data.slide_1_heading}
+            text={data.slide_1_text}
+            image={data.slide_1_image}
+          />
         )}
         {data?.slide_2_heading && (
-          <h2>{data?.slide_2_heading}</h2>
+          <Slide
+            heading={data.slide_2_heading}
+            text={data.slide_2_text}
+            image={data.slide_2_image}
+          />
         )}
         {data?.slide_3_heading && (
-          <h2>{data?.slide_3_heading}</h2>
+          <Slide
+            heading={data.slide_3_heading}
+            text={data.slide_3_text}
+            image={data.slide_3_image}
+          />
         )}
         {data?.slide_4_heading && (
-          <h2>{data?.slide_4_heading}</h2>
+          <Slide
+            heading={data.slide_4_heading}
+            text={data.slide_4_text}
+            image={data.slide_4_image}
+          />
         )}
       </div>
 
