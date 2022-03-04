@@ -7,3 +7,6 @@
 }
 
 /* Write you own custom classes here if necessary */
+body {
+  @apply bg-dodger-blue-100;
+}

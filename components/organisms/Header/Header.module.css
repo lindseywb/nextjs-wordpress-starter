@@ -1,5 +1,5 @@
 .header {
-  @apply sticky top-0 py-4 transition-all z-50 border-b shadow bg-gray-100;
+  @apply top-0 py-4 transition-all z-50 shadow bg-dodger-blue-50;
 
   & .search {
     @apply mb-8 flex justify-center;

@@ -13,7 +13,7 @@ body {
   /* Global Styles */
 
   & .innerWrap {
-    @apply max-w-5xl m-auto py-2;
+    @apply max-w-5xl m-auto py-2 mt-7 bg-white;
   }
 
   & ul:not(.breadcrumbs),

@@ -6,7 +6,7 @@ import Archive from '@/components/organisms/Archive'
 import getPagePropTypes from '@/functions/getPagePropTypes'
 import getPostTypeStaticPaths from '@/functions/wordpress/postTypes/getPostTypeStaticPaths'
 import getPostTypeStaticProps from '@/functions/wordpress/postTypes/getPostTypeStaticProps'
-import {PropTypes} from 'prop-types'
+import { PropTypes } from 'prop-types'
 
 // Define route post type.
 const postType = 'page'
